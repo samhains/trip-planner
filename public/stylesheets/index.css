@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+  .navbar-top {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .panel-default {
+    display: none; }
+  .summary-panel {
+    margin-top: 10px; } }
+
+body {
+  background-color: #c0c0c0;
+  box-sizing: border-box; }
+
+.navbar {
+  border-width: 0px;
+  margin-bottom: 0px; }
+
+.glyphcon {
+  margin-top: 20px; }
+
+.options-panel {
+  margin-top: 7%;
+  background-color: #F8F8F8;
+  float: right;
+  border-radius: 3px;
+  width: 100%; }
+  .options-panel select {
+    width: 150px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    float: left;
+    color: black; }
+  .options-panel option {
+    color: black; }
+  .options-panel label {
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 20px;
+    display: block;
+    color: black; }
+  .options-panel .first-label {
+    margin-top: 10px; }
+  .options-panel .last-form {
+    margin-bottom: 20px; }
+  .options-panel .btn {
+    float: left;
+    padding: 2px 8px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    border-color: #c0c0c0;
+    border-width: 4px;
+    margin-top: 3px; }
+  .options-panel .clear {
+    clear: both; }
+
+.summary-panel {
+  background-color: #F8F8F8;
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 2%; }
+  .summary-panel .navbar {
+    background-color: #e0dede; }
+  .summary-panel .btn {
+    background-color: black;
+    color: white;
+    border-width: 4px;
+    border-color: #F8F8F8;
+    border-radius: 100%; }
+  .summary-panel .btn-list {
+    margin: 7px; }
+  .summary-panel .activities {
+    margin: 20px; }
+  .summary-panel label {
+    color: black; }
+
+.activities li {
+  color: black; }
+
+.panel-body {
+  padding: 0px;
+  background-color: #E0DEDE; }
+
+.panel-default {
+  border-color: white;
+  border-width: 4px;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-radius: 2%; }
+
+.summary-header {
+  color: black; }
+
+#map-canvas {
+  height: 90vh; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */

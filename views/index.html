@@ -1,0 +1,88 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-9 col-lg-9"><div id="map-canvas"></div></div>
+		<div class="col-sm-12 col-md-3 col-lg-3">
+			<div class="row">
+				<div class="options-panel clearfix">
+					<label class="first-label clear">Hotels</label>
+					<select class="form-control">
+					{% for hotel in all_hotels %}
+					  <option>
+					    {{ hotel.name }}
+					  </option>
+					{% endfor %}
+					</select>
+					<button class="btn">x</button>
+
+					<label class="clear">Restaurants</label>
+					<select class="form-control">
+					{% for restaurant in all_restaurants %}
+					  <option>
+					    {{ restaurant.name }}
+					  </option>
+					{% endfor %}
+					</select>
+					<button class="btn">x</button>
+
+					<label class="clear">Things To Do</label>
+					<select class="form-control last-form">
+					{% for things in all_things_to_do %}
+					  <option>
+					    {{ things.name }}
+					  </option>
+					{% endfor %}
+					</select>
+					<button class="btn">x</button>
+				</div>
+			</div>
+			<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-body">
+				<h5 class="summary-header">Day 2</h5>
+				</div>
+			</div>
+				<div class= "summary-panel">
+				<nav class="navbar">
+					<div class="btn-list">
+						<button class="btn">1</button>
+						<button class="btn">2</button>
+						<button class="btn">3</button>
+						<button class="btn">+</button>
+					</div>
+				</nav>
+				<div class="activities">
+					<label>My Hotel</label>
+					<ul>
+					{% for hotel in hotels %}
+					  <li>
+					    {{ hotel }}
+					  </li>
+					{% endfor %}
+					</ul>
+					<label>My Restaurants</label>
+					<ul>
+					{% for restaurant in restaurants %}
+					  <li>
+					    {{ restaurant }}
+					  </li>
+					{% endfor %}
+					</ul>
+					<label>My Things To Do</label>
+					<ul>
+					{% for things in thingsToDo %}
+					  <li>
+					    {{ things }}
+					  </li>
+					{% endfor %}
+					</ul>
+				</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
